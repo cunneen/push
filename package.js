@@ -1,6 +1,7 @@
 Package.describe({
   name: 'nudelta2015:push',
-  version: '0.0.0-semantic-release',
+  // version: '0.0.0-semantic-release',
+  version: "0.0.3",
   summary: 'Isomorphic Push notifications for APN and GCM',
   git: 'https://github.com/NUDelta/push.git'
 });
