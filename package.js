@@ -28,7 +28,7 @@ Package.onUse(function(api) {
 
   // Keep track of users in the appCollection
   api.use([
-    'accounts-base'
+    'accounts-base@2.1.0'
   ], ['client', 'server'], { weak: true });
 
   api.use([
