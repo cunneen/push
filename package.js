@@ -1,7 +1,7 @@
 Package.describe({
   name: 'nudelta2015:push',
   // version: '0.0.0-semantic-release',
-  version: "0.0.3",
+  version: "0.0.5",
   summary: 'Isomorphic Push notifications for APN and GCM',
   git: 'https://github.com/NUDelta/push.git'
 });
@@ -32,7 +32,7 @@ Package.onUse(function(api) {
   ], ['client', 'server'], { weak: true });
 
   api.use([
-    'raix:eventstate@0.0.2',
+    'raix:eventstate@0.0.4',
     'check',
     'mongo',
     'underscore',
