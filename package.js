@@ -1,7 +1,7 @@
 Package.describe({
   name: 'nudelta2015:push',
   // version: '0.0.0-semantic-release',
-  version: "0.0.5",
+  version: "0.0.6",
   summary: 'Isomorphic Push notifications for APN and GCM',
   git: 'https://github.com/NUDelta/push.git'
 });
@@ -13,8 +13,8 @@ Npm.depends({
 });
 
 Cordova.depends({
-  'phonegap-plugin-push': '1.9.0', // previously 1.8.4
-  'cordova-plugin-device': '1.1.3', // previously 1.1.1
+  'phonegap-plugin-push': '2.3.0', // previously 1.8.4
+  'cordova-plugin-device': '2.0.3', // previously 1.1.1
 });
 
 Package.onUse(function(api) {
@@ -28,7 +28,7 @@ Package.onUse(function(api) {
 
   // Keep track of users in the appCollection
   api.use([
-    'accounts-base@2.1.0'
+    'accounts-base'
   ], ['client', 'server'], { weak: true });
 
   api.use([
