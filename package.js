@@ -1,7 +1,7 @@
 Package.describe({
   name: 'nudelta2015:push',
   // version: '0.0.0-semantic-release',
-  version: "0.0.6",
+  version: "1.0.0",
   summary: 'Isomorphic Push notifications for APN and GCM',
   git: 'https://github.com/NUDelta/push.git'
 });
@@ -18,7 +18,7 @@ Cordova.depends({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.2');
+  api.versionsFrom('2.6.1');
   api.use(['ecmascript']);
 
 
