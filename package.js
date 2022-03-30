@@ -1,7 +1,7 @@
 Package.describe({
   name: 'nudelta2015:push',
   // version: '0.0.0-semantic-release',
-  version: "0.0.6",
+  version: "1.0.1",
   summary: 'Isomorphic Push notifications for APN and GCM',
   git: 'https://github.com/NUDelta/push.git'
 });
@@ -13,12 +13,12 @@ Npm.depends({
 });
 
 Cordova.depends({
-  'phonegap-plugin-push': '2.3.0', // previously 1.8.4
+  '@havesource/cordova-plugin-push': 'https://github.com/havesource/cordova-plugin-push.git#a1df480db66821e29bd3c7a432e2e2fa2ba18bd4', // 3.0.0 , using github URL due to issues with the '@' in the plugin name
   'cordova-plugin-device': '2.0.3', // previously 1.1.1
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.2');
+  api.versionsFrom('2.6.1');
   api.use(['ecmascript']);
 
 
